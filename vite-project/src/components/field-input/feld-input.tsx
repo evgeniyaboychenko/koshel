@@ -15,7 +15,7 @@ export const FieldInput = observer((props:Props ) => {
 			<input  type='text'  placeholder='0' min='0' id ={currency.type} onInput={(evt)=>{
 				onInputChange(currency, currency.type, (evt.target as HTMLInputElement).value );
 			}} value ={currency.value}/>
-			<span className='field-input__error'>{currency.isValid? '': 'Недопустимый формат валюты'}</span>
+			<span className='field-input__error'>{currency.isValid? '': 'Недопустимый формат'}</span>
 		</div>
 	);
 });
